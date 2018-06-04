@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Transparent</title>
+    <style>
+        #scenepic {
+            width: 90%;
+            opacity: 0.5;
+            filter: alpha(opacity=50); /* IE 8 and earlier*/
+        }
+        #div1{
+            width: 200px;
+            height: 150px;
+            background-color: #ffd800;
+            position: absolute;
+            top: 300px;
+            opacity: 0.5;
+            z-index: 1000;
+        }
+        #div2{
+            width: 200px;
+            height: 150px;
+            background-color: #ff00dc;
+            opacity: 0.25;
+            position: absolute;
+            top: 400px;
+            left: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <img src="https://picsum.photos/250/120/?random" id="scenepic" />
+    <div id="div1"></div>
+    <div id="div2"></div>
+</body>
+
+</html>
